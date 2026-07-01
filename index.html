@@ -1,115 +1,185 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Básico -->
+    <title>Tech Solutions | Criação de Sites, E-commerce e Automação N8N em Campo Mourão</title>
+    <meta name="description" content="Desenvolvimento de software em Campo Mourão e região. Criamos sites, e-commerces e landing pages sob medida, além de fluxos N8N e automação de WhatsApp para sua empresa.">
+    <meta name="keywords" content="criação de sites Campo Mourão, automação para WhatsApp, ecommerce, loja online, landing pages, automação N8N, desenvolvimento de software, sites para empresa">
+    <meta name="author" content="Tech Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://techsolutionsideia.github.io/">
+
+    <!-- Open Graph (WhatsApp / Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Tech Solutions">
+    <meta property="og:title" content="Tech Solutions | Sites, E-commerce e Automação N8N em Campo Mourão">
+    <meta property="og:description" content="Desenvolvimento de sites, e-commerces e landing pages sob medida. Fluxos N8N e automação de WhatsApp para sua empresa em Campo Mourão e região.">
+    <meta property="og:url" content="https://techsolutionsideia.github.io/">
+    <meta property="og:image" content="https://techsolutionsideia.github.io/img/logo.png">
+    <meta property="og:image:alt" content="Logotipo da Tech Solutions">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tech Solutions | Sites, E-commerce e Automação N8N">
+    <meta name="twitter:description" content="Desenvolvimento de sites, e-commerces e landing pages sob medida. Automação de WhatsApp e fluxos N8N em Campo Mourão e região.">
+    <meta name="twitter:image" content="https://techsolutionsideia.github.io/img/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <meta name="theme-color" content="#0d1117">
+
+    <!-- Fontes e Ícones -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <title>Tech Solutions</title>
+
+    <!-- Dados Estruturados: LocalBusiness (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Tech Solutions",
+      "description": "Empresa de desenvolvimento de software. Sites, e-commerces e landing pages sob medida, fluxos N8N e automação de WhatsApp.",
+      "image": "https://techsolutionsideia.github.io/img/logo.png",
+      "url": "https://techsolutionsideia.github.io/",
+      "email": "techsolutionsideia@gmail.com",
+      "telephone": "+5544988092670",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua das Araucárias, 850",
+        "addressLocality": "Campo Mourão",
+        "addressRegion": "PR",
+        "addressCountry": "BR"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Campo Mourão e região, Paraná"
+      },
+      "sameAs": [],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desenvolvimento Web" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-commerce / Loja Online" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automação N8N e WhatsApp" } }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo.png" alt="Tech Solutions Logo">
+            <img src="img/logo.png" alt="Logotipo da Tech Solutions - Desenvolvimento de software em Campo Mourão" width="180" height="60">
         </div>
-        <div class="menu">
+        <nav class="menu" aria-label="Menu principal">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#serviços">Serviços</a></li>
+                <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#sobre">Sobre</a></li>
             </ul>
-        </div>
+        </nav>
         <div class="contato">
-            <button>Fale Conosco</button>
+            <a href="https://wa.me/5544988092670" target="_blank" rel="noopener">
+                <button>Fale Conosco</button>
+            </a>
         </div>
     </header>
 
     <main>
 
-        <section class="serviços" id="serviços">
+        <section class="serviços" id="servicos" aria-labelledby="titulo-servicos">
+            <h1 class="visually-hidden">Tech Solutions — Criação de sites, e-commerces e automação de WhatsApp com N8N em Campo Mourão e região</h1>
             <div class="serviços-texto">
-                <h2>Serviços</h2>
+                <h2 id="titulo-servicos">Serviços</h2>
                 <p>Somos uma empresa dedicada a fornecer soluções tecnológicas inovadoras para impulsionar o sucesso dos nossos clientes.</p>
             </div>
-            <div class="card-serviço">            
+            <div class="card-serviço">
                 <div class="serviço">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Desenvolvimento Web</h2>
-                    <p>Criação de sites modernos e responsivos.</p>
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites modernos e responsivos para a sua empresa.</p>
                 </div>
                 <div class="serviço">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <h2>Ecommerces</h2>
-                    <p>Orientação estratégica para otimizar seus processos de tecnologia.</p>
+                    <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                    <h3>E-commerces</h3>
+                    <p>Lojas online completas para você vender pela internet.</p>
                 </div>
                 <div class="serviço">
-                    <i class="fa-solid fa-code-branch"></i>
-                    <h2>N8N</h2>
-                    <p>Design e desenvolvimento de páginas de destino eficazes.</p>
+                    <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                    <h3>Automação N8N</h3>
+                    <p>Fluxos de automação e chatbots de WhatsApp sob medida.</p>
                 </div>
-        </div>
+            </div>
         </section>
 
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio" id="portfolio" aria-labelledby="titulo-portfolio">
             <div class="portfolio-texto">
-                <h2>Portfólio</h2>
+                <h2 id="titulo-portfolio">Portfólio</h2>
                 <p>Confira alguns dos nossos projetos mais recentes.</p>
             </div>
-            <div class="conteudo-portfolio">            
-            <div class="card-portfolio">
-                <img src="projeto1.png" alt="Projeto 1">
-                <h2>AtendiTop</h2>
-                <p>Criação de sites modernos e responsivos.</p>
-                <button class="button-portfolio"><a href="https://atenditop.com.br/" target="_blank">Conferir</a></button>
-            </div>
-            <div class="card-portfolio">
-                <img src="projeto2.png" alt="Projeto 2">
-                <h2>Hotel Campo Palace</h2>
-                <p>Orientação estratégica para otimizar seus processos de tecnologia.</p>
-                <button class="button-portfolio"><a href="https://hotelcampopalace.com.br/" target="_blank">Conferir</a></button>
-            </div>
-            <div class="card-portfolio">
-                <img src="projeto1.png" alt="Projeto 1">
-                <h2>MMG</h2>
-                <p>Design e desenvolvimento de páginas de destino eficazes.</p>
-                <div class="button-portfolio"><a href="https://techsolutionsideia.github.io/mmg-cm/" target="_blank">Conferir</a></div>
-            </div>
+            <div class="conteudo-portfolio">
+                <article class="card-portfolio">
+                    <img src="projeto1.png" alt="Projeto AtendiTop - plataforma de atendimento via WhatsApp" width="400" height="250" loading="lazy">
+                    <h3>AtendiTop</h3>
+                    <p>Plataforma SaaS de atendimento e automação de WhatsApp.</p>
+                    <a href="https://atenditop.com.br/" target="_blank" rel="noopener" class="button-portfolio" aria-label="Conferir o projeto AtendiTop">Conferir</a>
+                </article>
+                <article class="card-portfolio">
+                    <img src="projeto2.png" alt="Projeto Hotel Campo Palace - site institucional e reservas" width="400" height="250" loading="lazy">
+                    <h3>Hotel Campo Palace</h3>
+                    <p>Site institucional com fluxo de reservas integrado.</p>
+                    <a href="https://hotelcampopalace.com.br/" target="_blank" rel="noopener" class="button-portfolio" aria-label="Conferir o projeto Hotel Campo Palace">Conferir</a>
+                </article>
+                <article class="card-portfolio">
+                    <img src="projeto1.png" alt="Projeto MMG - site de logística e movimentação de mercadorias" width="400" height="250" loading="lazy">
+                    <h3>MMG</h3>
+                    <p>Site de logística com calculadora de benefícios em React.</p>
+                    <a href="https://techsolutionsideia.github.io/mmg-cm/" target="_blank" rel="noopener" class="button-portfolio" aria-label="Conferir o projeto MMG">Conferir</a>
+                </article>
             </div>
         </section>
 
-        <section class="sobre" id="sobre">
+        <section class="sobre" id="sobre" aria-labelledby="titulo-sobre">
             <div class="sobre-texto">
-                <h2>Sobre Nós</h2>
+                <h2 id="titulo-sobre">Sobre Nós</h2>
                 <p>Somos uma empresa dedicada a fornecer soluções tecnológicas inovadoras para impulsionar o sucesso dos nossos clientes.</p>
             </div>
             <div class="processo">
-               <div class="etapa">
+                <div class="etapa">
                     <h3>Entendimento</h3>
                     <p>Planejamento e análise de requisitos.</p>
                 </div>
-                <div class="seta">&rarr;</div>
+                <div class="seta" aria-hidden="true">&rarr;</div>
                 <div class="etapa">
                     <h3>Planejamento</h3>
-                    <p>Desenvolvimento e implementação das soluções.</p>
+                    <p>Definição de estratégia e arquitetura da solução.</p>
                 </div>
-                <div class="seta">&rarr;</div>
+                <div class="seta" aria-hidden="true">&rarr;</div>
                 <div class="etapa">
                     <h3>Desenvolvimento</h3>
-                    <p>Testes, ajustes e entrega final do projeto.</p>
+                    <p>Construção, testes e ajustes do projeto.</p>
                 </div>
-                <div class="seta">&rarr;</div>
+                <div class="seta" aria-hidden="true">&rarr;</div>
                 <div class="etapa">
-                    <h3>Entrega & Suporte</h3>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Entrega &amp; Suporte</h3>
+                    <p>Entrega final e suporte contínuo pós-lançamento.</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer></footer>
 
+    <footer>
+        <p>Rua das Araucárias, 850 — Campo Mourão, PR |
+           <a href="mailto:techsolutionsideia@gmail.com">techsolutionsideia@gmail.com</a> |
+           <a href="https://wa.me/5544988092670" target="_blank" rel="noopener">(44) 9 8809-2670</a>
+        </p>
+        <p>&copy; 2026 Tech Solutions. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
