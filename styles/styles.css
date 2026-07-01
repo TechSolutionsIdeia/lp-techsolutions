@@ -1,0 +1,43 @@
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+:root {
+    --azul: #1261FD;
+    --azul-hover: #0d4fd6;
+    --texto: #0f172a;
+    --texto-suave: #64748b;
+    --bg: #f8fafc;
+    --branco: #ffffff;
+    --borda: #e2e8f0;
+}
+ 
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--texto);
+    background-color: var(--branco);
+    line-height: 1.6;
+}
+ 
+h1, h2, h3 { line-height: 1.2; }
+img { max-width: 100%; display: block; }
+
+
+@media (max-width: 900px) {
+    header { padding: 14px 24px; flex-wrap: wrap; gap: 12px; }
+    .menu ul { gap: 18px; }
+    section { padding: 60px 24px; }
+    .card-serviço,
+    .conteudo-portfolio { grid-template-columns: 1fr; }
+    .div-sobre { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+@media (max-width: 560px) {
+    .div-sobre { grid-template-columns: 1fr; }
+}
