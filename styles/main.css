@@ -62,7 +62,7 @@ section {
     margin-bottom: 20px;
 }
  
-.serviço h2 {
+.serviço h3 {
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -99,7 +99,7 @@ section {
     object-fit: cover;
 }
  
-.card-portfolio h2 {
+.card-portfolio h3 {
     font-size: 18px;
     margin: 20px 20px 8px;
 }
@@ -131,18 +131,10 @@ section {
 }
 
 .button-portfolio:hover {
-    background-color: var(--azul-escuro);
+    background-color: var(--azul-hover);
 }
  
 .sobre { background-color: var(--bg); }
- 
-.div-sobre {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    max-width: 1100px;
-    margin: 0 auto;
-}
  
 .etapa {
     text-align: center;

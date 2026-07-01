@@ -1,7 +1,22 @@
 footer {
-    background-color: #ffff;
+    background-color: var(--texto);
     color: #cbd5e1;
     padding: 40px 60px;
     text-align: center;
     font-size: 14px;
+    line-height: 1.9;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+footer a:hover { color: var(--azul); }
+
+footer p { margin: 0; }
+
+@media (max-width: 560px) {
+    footer { padding: 32px 24px; }
 }
