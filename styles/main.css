@@ -110,6 +110,21 @@ section {
     margin: 0 20px 24px;
 }
 
+.card-portfolio a {
+    display: inline-block;
+    margin: 0 20px 20px;
+    padding: 8px 20px;
+    background-color: var(--azul);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+
 .button-portfolio {
     display: inline-block;
     margin: 0 20px 20px;
