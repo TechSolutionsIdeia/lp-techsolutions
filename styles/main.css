@@ -196,3 +196,9 @@ section {
     max-height: 600px;
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+    .hero-img {
+        display: none;
+    }
+}
