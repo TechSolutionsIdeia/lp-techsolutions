@@ -316,24 +316,5 @@
         </p>
         <p>&copy; 2026 Tech Solutions. Todos os direitos reservados.</p>
     </footer>
-
-    <script>
-function runCounters(){
-  document.querySelectorAll('.count').forEach(el=>{
-    const to=+el.dataset.to;
-    const suffix=el.dataset.suffix||'';
-    const dur=1400;const start=performance.now();
-    function tick(now){
-      const p=Math.min((now-start)/dur,1);
-      const eased=1-Math.pow(1-p,3);
-      let val=Math.round(to*eased);
-      el.textContent=val.toLocaleString('pt-BR')+suffix;
-      if(p<1)requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  });
-}
-setTimeout(runCounters,900);
-</script>
 </body>
 </html>
