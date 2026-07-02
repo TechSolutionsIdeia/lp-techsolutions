@@ -198,7 +198,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    .hero-img {
+    .hero {
         display: none;
     }
 }

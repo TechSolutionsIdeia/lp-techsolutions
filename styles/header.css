@@ -43,3 +43,81 @@ header {
 }
  
 .contato button:hover { background-color: var(--azul-hover); }
+
+/* Botão do menu */
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--texto);
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+    header{
+        padding: 16px 20px;
+    }
+
+    .logo img{
+        width:120px;
+    }
+
+    .contato{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .menu{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:var(--branco);
+        border-top:1px solid var(--borda);
+
+        max-height:0;
+        overflow:hidden;
+        transition:.3s;
+    }
+
+    .menu.active{
+        max-height:400px;
+    }
+
+    .menu ul{
+        flex-direction:column;
+        gap:0;
+    }
+
+    .menu ul li{
+        border-bottom:1px solid var(--borda);
+    }
+
+    .menu ul li a{
+        display:block;
+        padding:18px 20px;
+    }
+
+    .mobile-btn{
+        display:block;
+    }
+
+    .mobile-btn a{
+        background:var(--azul);
+        color:#fff !important;
+        text-align:center;
+        margin:15px;
+        border-radius:8px;
+    }
+}
+
+/* Desktop */
+.mobile-btn{
+    display:none;
+}
